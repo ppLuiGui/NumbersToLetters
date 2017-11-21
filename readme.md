@@ -10,7 +10,7 @@ Basado en la clase de @AxiaCore
     composer require ppLuiGui/NumbersToLetters@devmaster
 ```
 
-## Uso en laravel/Lumen
+## Uso en Lumen
 
 Agregar a los servicios
 
@@ -26,6 +26,6 @@ Agregar un alias
 
 ```php
 	$num = "10008000.00";
-    $letras = Numbertoletter::converter($num); 
+    $letras = Numbertoletter::convert($num); 
     var_dump($letras); // string 'Doce mil pesos 12/100 M.N.' (length=26)
 ```
