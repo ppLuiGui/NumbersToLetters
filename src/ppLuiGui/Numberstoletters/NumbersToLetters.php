@@ -176,9 +176,9 @@ class NumbersToLetters
             $tex = $t . $tex;
         }
         $tex = $neg . substr($tex, 1) . $fin;
-        //Zi hack --> return ucfirst($tex);
+        
         $ff = $float[1] == '' ? '00':$float[1] ;
-        $end_num=ucfirst($tex).' pesos '.$ff.'/100 M.N.';
+        $end_num=ucfirst($tex).' Pesos '.$ff.'/100 M.N.';
         return $end_num;
     }
 }

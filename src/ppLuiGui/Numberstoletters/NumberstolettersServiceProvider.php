@@ -18,7 +18,7 @@ class NumberstolettersServiceProvider extends ServiceProvider {
 
     public function register()
     {
-        $this->app->bindShared('numberstoletters', function () {
+        $this->app->singleton('numberstoletters', function () {
             return new NumbersToLetters();
         });
     }
